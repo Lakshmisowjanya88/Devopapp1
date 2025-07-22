@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gift Recommendations - WishApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gift Recommendations</h1>
+
+    <form id="giftForm">
+      <label for="age">Age:
+        <input type="number" id="age" required />
+      </label><br />
+
+      <label for="gender">Gender:
+        <select id="gender" required>
+  <option value="">Select</option>
+  <option value="male">Male</option>      <!-- ✅ changed from "men" -->
+  <option value="female">Female</option>  <!-- ✅ changed from "women" -->
+</select>
+
+      </label><br />
+
+      <!-- Occasion is removed because it's selected on homepage -->
+
+      <label for="budget">Budget:
+        <select id="budget" required>
+          <option value="">Select</option>
+          <option value="under+500">Under ₹500</option>
+          <option value="under+1000">Under ₹1000</option>
+          <option value="under+2000">Under ₹2000</option>
+          <option value="under+5000">Under ₹5000</option>
+          <option value="under+20000">Under ₹20000</option>
+        </select>
+      </label><br />
+
+      <label for="interests">
+        Interests (type keywords like:<br />
+        Birthday: tech, jewelry, chocolate lover;<br />
+        Marriage: jewelry, tech;<br />
+        Diwali: sweet lover, chocolate lover, decorations lover)
+      </label><br />
+      <input
+        type="text"
+        id="interests"
+        placeholder="e.g., tech, jewelry, chocolate lover, sweet lover, decorations lover"
+        required
+      /><br />
+
+      <button type="submit">Find Gifts</button>
+    </form>
+
+    <div id="giftContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

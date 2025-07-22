@@ -1,0 +1,164 @@
+/* Base styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.5s ease;
+  color: #333;
+}
+.gift-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: inline-block;
+}
+
+.gift-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+/* Background themes */
+.birthday {
+  background: linear-gradient(to right, blue, violet, purple, yellow, pink);
+}
+
+.marriage {
+  background: linear-gradient(to right, #fbb1b1, #b30000);
+}
+
+.diwali {
+  background: linear-gradient(to right, red, orange);
+}
+
+.anniversary {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+.graduation {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+}
+
+.default-bg {
+  background: linear-gradient(to right, skyblue, yellow);
+}
+
+/* Main container */
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Form styles */
+form {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Button (e.g. Back to Home) */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: white;
+  background-color: #444;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #222;
+}
+
+/* Gift card layout */
+#giftContainer,
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gift-card {
+  background-color: #ffffffcc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.gift-card:hover {
+  transform: scale(1.05);
+}
+
+.gift-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gift-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gift-card button:hover {
+  background-color: #218838;
+}

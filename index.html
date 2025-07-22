@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WishApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="default-bg">
+  <div class="container">
+    <h1>Welcome to WishApp</h1>
+
+    <label for="occasion">Select an occasion:</label>
+    <select id="occasion" onchange="changeTheme()">
+      <option value="">--Choose--</option>
+      <option value="birthday">Birthday</option>
+      <option value="marriage">Marriage</option>
+      <option value="diwali">Diwali</option>
+    </select>
+
+    <div class="buttons">
+      <a href="gifts.html" class="btn" onclick="saveOccasion()">Gift Recommendations</a>
+    </div>
+  </div>
+
+  <script>
+    function changeTheme() {
+      const occasion = document.getElementById("occasion").value;
+      document.body.className = "";
+      switch (occasion) {
+        case "birthday":
+          document.body.classList.add("birthday");
+          break;
+        case "marriage":
+          document.body.classList.add("marriage");
+          break;
+        case "diwali":
+          document.body.classList.add("diwali");
+          break;
+        default:
+          document.body.classList.add("default-bg");
+      }
+    }
+
+    function saveOccasion() {
+      const occasion = document.getElementById('occasion').value;
+      localStorage.setItem('selectedOccasion', occasion);
+    }
+  </script>
+</body>
+</html>
